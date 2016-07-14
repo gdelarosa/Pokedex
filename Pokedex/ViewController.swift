@@ -32,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         parsePokemonCSV()
     }
     
-    func initAudio(){
+    func initAudio(){ // MUSIC 
         
         let path = NSBundle.mainBundle().pathForResource("music", ofType: "mp3")!
         
@@ -119,7 +119,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     
-    @IBAction func musicBtnPressed(sender: UIButton!) {
+    @IBAction func musicBtnPressed(sender: UIButton!) {  // MUSIC
         if musicPlayer.playing {
             musicPlayer.stop()
             sender.alpha = 0.2
@@ -130,7 +130,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) { // SEARCH BAR 
         view.endEditing(true)
     }
     
